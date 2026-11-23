@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HELPIST | Coming Soon</title>
-  <meta name="description" content="HELPIST - Your On-Demand Personal Helper. Coming soon!">
+  <meta name="description" content="HELPIST - Your On-Demand Personal Helper. Personal Helper, Anytime, Anywhere.">
 
   <style>
     * {
@@ -17,108 +17,98 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
-      color: #666666;
+      color: #333333;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
     .container {
       width: 100%;
-      max-width: 1000px;
+      max-width: 900px;
+      padding: 30px 20px 20px;
       margin: auto;
-      padding: 50px 25px;
-      text-align: center;
-    }
-
-    header {
-      margin-bottom: 35px;
     }
 
     .logo {
-      display: block;
-      width: 100%;
-      max-width: 420px;
+      width: 230px;
+      max-width: 75%;
       height: auto;
-      margin: 0 auto 12px;
+      display: block;
+      margin: 0 auto 8px;
     }
 
     .tagline {
-      font-size: 23px;
+      font-size: 21px;
       font-weight: bold;
-      color: #666666;
-      line-height: 1.5;
+      color: #333333;
+      margin-bottom: 38px;
     }
 
-    .coming {
-      font-size: clamp(38px, 6vw, 60px);
-      font-weight: 800;
-      color: #20c8d5;
-      margin-bottom: 28px;
+    h1 {
+      font-size: 44px;
+      color: #20b8c8;
+      margin-bottom: 18px;
     }
 
     .message {
       font-size: 18px;
-      line-height: 1.9;
-      margin: 0 auto 40px;
+      line-height: 1.7;
+      color: #555555;
       max-width: 700px;
-      color: #666666;
+      margin: 0 auto 24px;
     }
 
     .stay-tuned {
-      display: inline-block;
-      margin-top: 15px;
-      font-size: 24px;
-      font-weight: 800;
-      color: #20c8d5;
-      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333;
+      margin-bottom: 35px;
       white-space: nowrap;
     }
 
-    .contacts {
+    .contact-section {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 22px;
-      margin: 40px 0 30px;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
     .contact-card {
-      flex: 1;
-      min-width: 260px;
-      max-width: 365px;
-      padding: 30px 20px;
-      border: 1px solid #e5e5e5;
-      border-top: 4px solid #20c8d5;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      background: #f7f9fa;
+      border: 1px solid #e5e9eb;
+      border-radius: 12px;
+      padding: 22px 25px;
+      width: 310px;
+      max-width: 100%;
     }
 
-    .contact-card h3 {
+    .contact-card h2 {
       font-size: 18px;
-      margin-bottom: 14px;
-      color: #777777;
+      color: #20b8c8;
+      margin-bottom: 10px;
+    }
+
+    .contact-card p {
+      font-size: 14px;
+      color: #666666;
+      margin-bottom: 8px;
     }
 
     .contact-card a {
-      text-decoration: none;
-      color: #16bfcf;
-      font-weight: bold;
+      color: #333333;
       font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      overflow-wrap: anywhere;
     }
 
     .contact-card a:hover {
-      color: #777777;
-    }
-
-    .social-section {
-      margin-top: 40px;
-    }
-
-    .social-section h3 {
-      color: #777777;
-      font-size: 18px;
-      margin-bottom: 20px;
+      color: #20b8c8;
     }
 
     .social-icons {
@@ -126,89 +116,84 @@
       justify-content: center;
       align-items: center;
       gap: 22px;
+      margin: 25px 0 20px;
     }
 
     .social-icons a {
-      width: 52px;
-      height: 52px;
-      display: flex;
-      justify-content: center;
+      display: inline-flex;
       align-items: center;
-      border: 1px solid #e5e5e5;
-      border-radius: 50%;
-      color: #20c8d5;
-      transition: 0.25s ease;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      transition: transform 0.2s ease;
     }
 
     .social-icons a:hover {
-      background: #20c8d5;
-      color: #ffffff;
       transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(32, 200, 213, 0.2);
     }
 
     .social-icons svg {
-      width: 25px;
-      height: 25px;
-      fill: currentColor;
+      width: 42px;
+      height: 42px;
+      display: block;
     }
 
     footer {
-      margin-top: auto;
-      text-align: center;
-      background: #f6f8f9;
-      padding: 22px 15px;
-      color: #888888;
+      width: 100%;
+      padding: 20px 15px;
       font-size: 14px;
-      border-top: 1px solid #eeeeee;
+      color: #777777;
+      text-align: center;
     }
 
     @media (max-width: 600px) {
       .container {
-        padding: 35px 12px;
-      }
-
-      header {
-        margin-bottom: 30px;
+        padding: 22px 15px 15px;
       }
 
       .logo {
-        max-width: 320px;
-        margin-bottom: 10px;
+        width: 200px;
       }
 
       .tagline {
-        font-size: 19px;
+        font-size: 18px;
+        margin-bottom: 30px;
       }
 
-      .coming {
-        font-size: 38px;
-        margin-bottom: 22px;
+      h1 {
+        font-size: 34px;
       }
 
       .message {
         font-size: 16px;
-        line-height: 1.8;
       }
 
       .stay-tuned {
-        font-size: clamp(14px, 4vw, 17px);
-        letter-spacing: 0px;
-        white-space: nowrap;
-        margin-top: 12px;
+        font-size: clamp(13px, 4vw, 18px);
+        margin-bottom: 30px;
       }
 
-      .contacts {
-        gap: 18px;
+      .contact-section {
+        gap: 15px;
       }
 
       .contact-card {
-        min-width: 0;
         width: 100%;
+        padding: 20px;
       }
 
       .social-icons {
         gap: 18px;
+      }
+
+      .social-icons a,
+      .social-icons svg {
+        width: 38px;
+        height: 38px;
+      }
+
+      footer {
+        font-size: 13px;
       }
     }
   </style>
@@ -216,75 +201,112 @@
 
 <body>
 
-  <div class="container">
+  <main class="container">
 
-    <header>
-      <img src="logo.png" alt="HELPIST Logo" class="logo">
-      <p class="tagline">Your On-Demand Personal Helper</p>
-    </header>
+    <img src="logo.png" alt="HELPIST Logo" class="logo">
 
-    <main>
-      <h1 class="coming">We're Coming Soon!</h1>
+    <p class="tagline">Your On-Demand Personal Helper</p>
 
-      <p class="message">
-        Personal Helper, Anytime, Anywhere.<br>
-        We're working hard to bring you a smarter, simpler way to get things done.
-        <br>
-        <span class="stay-tuned">✨ Stay Tuned. Something Great Is Coming! ✨</span>
-      </p>
+    <h1>We're Coming Soon!</h1>
 
-      <div class="contacts">
+    <p class="message">
+      Personal Helper, Anytime, Anywhere.
+      We're working hard to bring you a smarter,
+      simpler way to get things done.
+    </p>
 
-        <div class="contact-card">
-          <h3>General Enquiries</h3>
-          <a href="mailto:contact@helpist.in">contact@helpist.in</a>
-        </div>
+    <p class="stay-tuned">
+      ✨ Stay Tuned. Something Great Is Coming! ✨
+    </p>
 
-        <div class="contact-card">
-          <h3>Careers &amp; Opportunities</h3>
-          <a href="mailto:hiring@helpist.in">hiring@helpist.in</a>
-        </div>
+    <section class="contact-section">
 
+      <div class="contact-card">
+        <h2>General Enquiries</h2>
+        <p>For general information and enquiries</p>
+        <a href="mailto:contact@helpist.in">
+          contact@helpist.in
+        </a>
       </div>
 
-      <div class="social-section">
-        <h3>Follow HELPIST</h3>
-
-        <div class="social-icons">
-
-          <!-- YouTube -->
-          <a href="https://www.youtube.com/@helpistservices"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="YouTube">
-            <svg viewBox="0 0 24 24">
-              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136C4.495 20.455 12 20.455 12 20.455s7.505 0 9.377-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/>
-            </svg>
-          </a>
-
-          <!-- Facebook -->
-          <a href="https://facebook.com/helpistservices"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Facebook">
-            <svg viewBox="0 0 24 24">
-              <path d="M22 12a10 10 0 1 0-11.563 9.874v-6.987H7.9V12h2.537V9.788c0-2.503 1.492-3.889 3.777-3.889 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.563V12h2.773l-.443 2.887h-2.33v6.987A10 10 0 0 0 22 12Z"/>
-            </svg>
-          </a>
-
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/helpistservices?cnvx=MTZoZ2N6c2M4MDlmcg=="
-             target="_blank" rel="noopener noreferrer"
-             aria-label="Instagram">
-            <svg viewBox="0 0 24 24">
-              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
-            </svg>
-          </a>
-
-        </div>
+      <div class="contact-card">
+        <h2>Careers &amp; Opportunities</h2>
+        <p>Interested in joining the HELPIST team?</p>
+        <a href="mailto:hiring@helpist.in">
+          hiring@helpist.in
+        </a>
       </div>
 
-    </main>
+    </section>
 
-  </div>
+    <div class="social-icons">
+
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@helpistservices"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="YouTube">
+
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="8" width="42" height="32"
+                rx="10" fill="#FF0000"/>
+          <path d="M20 16.5L31 24L20 31.5V16.5Z"
+                fill="#FFFFFF"/>
+        </svg>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://facebook.com/helpistservices"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Facebook">
+
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1877F2"
+            d="M24 3C12.4 3 3 12.4 3 24c0 10.5 7.7 19.2 17.8 20.8V29H15v-5h5.8v-4.2c0-5.7 3.4-8.8 8.5-8.8
+            2.4 0 4.9.4 4.9.4v5.4h-2.8c-2.8 0-3.7 1.7-3.7 3.5V24h6.3l-1 5h-5.3v15.8C38.7 43.2 45 34.5 45 24
+            45 12.4 35.6 3 24 3Z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/helpistservices?cnvx=MTZoZ2N6c2M4MDlmcg=="
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Instagram">
+
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="instagramGradient"
+              x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FFDC80"/>
+              <stop offset="30%" stop-color="#F77737"/>
+              <stop offset="60%" stop-color="#E1306C"/>
+              <stop offset="100%" stop-color="#833AB4"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="4" y="4" width="40" height="40"
+                rx="12" fill="url(#instagramGradient)"/>
+
+          <rect x="12" y="12" width="24" height="24"
+                rx="7" fill="none"
+                stroke="#FFFFFF" stroke-width="3"/>
+
+          <circle cx="24" cy="24" r="6"
+                  fill="none" stroke="#FFFFFF"
+                  stroke-width="3"/>
+
+          <circle cx="32" cy="16" r="2.2"
+                  fill="#FFFFFF"/>
+
+        </svg>
+      </a>
+
+    </div>
+
+  </main>
 
   <footer>
     Helping you. Simplifying life.
