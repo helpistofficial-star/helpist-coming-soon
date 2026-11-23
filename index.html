@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#ffffff">
   <title>HELPIST | Coming Soon</title>
-  <meta name="description" content="HELPIST - Your On-Demand Personal Helper. Personal Helper, Anytime, Anywhere.">
-
+  <meta name="description" content="HELPIST - Your On-Demand Personal Helper. Coming soon!">
   <style>
     * {
       margin: 0;
@@ -18,7 +16,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #ffffff;
-      color: #333333;
+      color: #666666;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -26,102 +24,96 @@
 
     .container {
       width: 100%;
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 30px 24px;
+      padding: 50px 25px;
+      text-align: center;
     }
 
     header {
-      text-align: center;
-      padding: 35px 0 20px;
+      margin-bottom: 65px;
     }
 
     .logo {
-      width: min(420px, 85%);
-      height: auto;
-      max-height: 180px;
-      object-fit: contain;
       display: block;
-      margin: 0 auto 25px;
-    }
-
-    .brand-name {
-      font-size: clamp(28px, 5vw, 48px);
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #888888;
-    }
-
-    .brand-name span {
-      color: #20cbd5;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 0 auto 30px;
     }
 
     .tagline {
-      font-size: clamp(16px, 2.5vw, 22px);
-      margin-top: 14px;
-      color: #555555;
-    }
-
-    main {
-      text-align: center;
-      padding: 50px 15px 65px;
+      font-size: 23px;
+      font-weight: bold;
+      color: #666666;
+      line-height: 1.5;
     }
 
     .coming {
-      color: #20cbd5;
-      font-size: clamp(32px, 6vw, 58px);
+      font-size: clamp(38px, 6vw, 60px);
       font-weight: 800;
-      margin-bottom: 20px;
+      color: #20c8d5;
+      margin-bottom: 28px;
     }
 
     .message {
-      font-size: clamp(16px, 2vw, 19px);
-      line-height: 1.8;
-      color: #666666;
+      font-size: 18px;
+      line-height: 1.9;
+      margin: 0 auto 40px;
       max-width: 700px;
-      margin: 0 auto 35px;
+      color: #666666;
     }
 
-    .contact-section {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      max-width: 750px;
-      margin: auto;
+    .stay-tuned {
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #20c8d5;
+      letter-spacing: 1px;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 22px;
+      margin: 40px 0 30px;
     }
 
     .contact-card {
-      padding: 25px 20px;
-      border: 1px solid #e8e8e8;
-      border-top: 4px solid #20cbd5;
-      border-radius: 16px;
-      background: #ffffff;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+      flex: 1;
+      min-width: 260px;
+      max-width: 365px;
+      padding: 30px 20px;
+      border: 1px solid #e5e5e5;
+      border-top: 4px solid #20c8d5;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     }
 
     .contact-card h3 {
       font-size: 18px;
+      margin-bottom: 14px;
       color: #777777;
-      margin-bottom: 12px;
     }
 
     .contact-card a {
-      color: #20b9c5;
       text-decoration: none;
+      color: #16bfcf;
+      font-weight: bold;
       font-size: 16px;
-      font-weight: 600;
-      word-break: break-word;
     }
 
     .contact-card a:hover {
-      text-decoration: underline;
+      color: #777777;
     }
 
     footer {
       margin-top: auto;
       text-align: center;
-      padding: 24px 15px;
-      background: #f7f9fa;
+      background: #f6f8f9;
+      padding: 22px 15px;
       color: #888888;
       font-size: 14px;
       border-top: 1px solid #eeeeee;
@@ -129,38 +121,31 @@
 
     @media (max-width: 600px) {
       .container {
-        padding: 20px 18px;
+        padding: 40px 18px;
       }
 
       header {
-        padding-top: 25px;
+        margin-bottom: 45px;
       }
 
       .logo {
-        width: 90%;
-        max-height: 130px;
-        margin-bottom: 20px;
+        max-width: 320px;
       }
 
-      main {
-        padding: 35px 5px 45px;
+      .tagline {
+        font-size: 19px;
       }
 
       .message {
-        line-height: 1.7;
+        font-size: 16px;
       }
 
-      .contact-section {
-        grid-template-columns: 1fr;
-        gap: 16px;
+      .stay-tuned {
+        font-size: 21px;
       }
 
-      .contact-card {
-        padding: 23px 15px;
-      }
-
-      footer {
-        padding: 20px 12px;
+      .contacts {
+        gap: 18px;
       }
     }
   </style>
@@ -169,12 +154,9 @@
 <body>
 
   <div class="container">
+
     <header>
-      <img src="logo.png" alt="HELPIST Logo" class="logo"
-           onerror="this.style.display='none'">
-
-      <div class="brand-name">HELP<span>!</span>ST</div>
-
+      <img src="logo.png" alt="HELPIST Logo" class="logo">
       <p class="tagline">Your On-Demand Personal Helper</p>
     </header>
 
@@ -183,28 +165,26 @@
 
       <p class="message">
         Personal Helper, Anytime, Anywhere.<br>
-        We're working hard to bring you a smarter, simpler
-        way to get things done. Stay tuned!
+        We're working hard to bring you a smarter, simpler way to get things done.
+        <br>
+        <span class="stay-tuned">✨ Stay Tuned. Something Great Is Coming! ✨</span>
       </p>
 
-      <div class="contact-section">
+      <div class="contacts">
 
         <div class="contact-card">
           <h3>General Enquiries</h3>
-          <a href="mailto:contact@helpist.in">
-            contact@helpist.in
-          </a>
+          <a href="mailto:contact@helpist.in">contact@helpist.in</a>
         </div>
 
         <div class="contact-card">
           <h3>Careers &amp; Opportunities</h3>
-          <a href="mailto:hiring@helpist.in">
-            hiring@helpist.in
-          </a>
+          <a href="mailto:hiring@helpist.in">hiring@helpist.in</a>
         </div>
 
       </div>
     </main>
+
   </div>
 
   <footer>
