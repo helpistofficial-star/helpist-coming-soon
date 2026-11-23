@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,6 +111,48 @@
       color: #777777;
     }
 
+    .social-section {
+      margin-top: 40px;
+    }
+
+    .social-section h3 {
+      color: #777777;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .social-icons a {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #e5e5e5;
+      border-radius: 50%;
+      color: #20c8d5;
+      transition: 0.25s ease;
+    }
+
+    .social-icons a:hover {
+      background: #20c8d5;
+      color: #ffffff;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(32, 200, 213, 0.2);
+    }
+
+    .social-icons svg {
+      width: 25px;
+      height: 25px;
+      fill: currentColor;
+    }
+
     footer {
       margin-top: auto;
       text-align: center;
@@ -163,6 +206,10 @@
         min-width: 0;
         width: 100%;
       }
+
+      .social-icons {
+        gap: 18px;
+      }
     }
   </style>
 </head>
@@ -199,6 +246,42 @@
         </div>
 
       </div>
+
+      <div class="social-section">
+        <h3>Follow HELPIST</h3>
+
+        <div class="social-icons">
+
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/@helpistservices"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.016 3.016 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136C4.495 20.455 12 20.455 12 20.455s7.505 0 9.377-.505a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814ZM9.545 15.568V8.432L15.818 12l-6.273 3.568Z"/>
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://facebook.com/helpistservices"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 1 0-11.563 9.874v-6.987H7.9V12h2.537V9.788c0-2.503 1.492-3.889 3.777-3.889 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.563V12h2.773l-.443 2.887h-2.33v6.987A10 10 0 0 0 22 12Z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/helpistservices?cnvx=MTZoZ2N6c2M4MDlmcg=="
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+
     </main>
 
   </div>
